@@ -10,7 +10,7 @@ $(function(){
 
     function getproduct(brandtitleid) {
         $.ajax({
-            url:"http://mmb.ittun.com/api/getbrand",
+            url:"https://mmb.ittun.com/api/getbrand",
             data:{brandtitleid:brandtitleid},
             success:function(data) {
                 console.log(data);
@@ -21,7 +21,7 @@ $(function(){
     }
     function getcount(brandtitleid) {
         $.ajax({
-            url:"http://mmb.ittun.com/api/getbrandproductlist",
+            url:"https://mmb.ittun.com/api/getbrandproductlist",
             data:{brandtitleid:brandtitleid,pagesize:4},
             success:function(data) {
                 console.log(data);
@@ -39,7 +39,7 @@ $(function(){
     }
     function getmessage(productid) {
         $.ajax({
-            url:"http://mmb.ittun.com/api/getproductcom",
+            url:"https://mmb.ittun.com/api/getproductcom",
             data:{productid:productid},
             success:function(data) {
                 console.log(data);

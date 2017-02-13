@@ -7,7 +7,7 @@ $(function(){
     getIndex();
     function getIndex(){
         $.ajax({
-            url:"http://mmb.ittun.com/api/getindexmenu",
+            url:"https://mmb.ittun.com/api/getindexmenu",
             success:function(data) {
                 //成功请求回来得到参数
                 console.log(data);
@@ -25,7 +25,7 @@ $(function(){
     getRecommen();
     function getRecommen() {
         $.ajax({
-            url:"http://mmb.ittun.com/api/getmoneyctrl",
+            url:"https://mmb.ittun.com/api/getmoneyctrl",
             success:function(data) {
                 //成功的回调函数
                 console.log(data);

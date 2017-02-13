@@ -8,7 +8,7 @@ $(function(){
     getproduct(couponid);
     function getproduct(couponid) {
         $.ajax({
-            url:"http://mmb.ittun.com/api/getcouponproduct",
+            url:"https://mmb.ittun.com/api/getcouponproduct",
             data:{couponid:couponid},
             success:function(data) {
                 console.log(data);

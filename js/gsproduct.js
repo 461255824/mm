@@ -69,7 +69,7 @@ $(function(){
     //请求页面数据
     function getproduct(shopid,areaid) {
         $.ajax({
-            url:"http://mmb.ittun.com/api/getgsproduct",
+            url:"https://mmb.ittun.com/api/getgsproduct",
             data:{shopid:shopid,areaid:areaid},
             success:function(data){
                 console.log(data);

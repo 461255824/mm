@@ -37,7 +37,7 @@ $(function(){
 
     function getdata() {
         $.ajax({
-            url:"http://mmb.ittun.com/api/getinlanddiscount",
+            url:"https://mmb.ittun.com/api/getinlanddiscount",
             success:function(data) {
                 console.log(data);
                 //每次只渲染四个

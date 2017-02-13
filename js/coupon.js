@@ -3,7 +3,7 @@
  */
 $(function(){
     $.ajax({
-        url:"http://mmb.ittun.com/api/getcoupon",
+        url:"https://mmb.ittun.com/api/getcoupon",
         success:function(data) {
             //请求到的数据
             console.log(data);

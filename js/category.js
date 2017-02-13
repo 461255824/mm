@@ -6,7 +6,7 @@ $(function(){
     getIndex() ;
     function getIndex(){
         $.ajax({
-            url:"http://mmb.ittun.com/api/getcategorytitle",
+            url:"https://mmb.ittun.com/api/getcategorytitle",
             success:function(data) {
                 //这里的data就是返回的数据列表 标题 生成模板 加个盒子
 
@@ -19,7 +19,7 @@ $(function(){
                    var titleId =  $(this).attr("data-titleId");
                 //然后发送ajax请求  并携带参数  titleId
                     $.ajax({
-                        url:"http://mmb.ittun.com/api/getcategory?titleid="+titleId,
+                        url:"https://mmb.ittun.com/api/getcategory?titleid="+titleId,
                         success:function(data) {
                             //这是点击后返回的数据
                             console.log(data);

@@ -11,7 +11,7 @@ $(function(){
     function setproducttitle(categoryId) {
     //传进来一个数值 用来找对应的id应的商品
         $.ajax({
-            url:"http://mmb.ittun.com/api/getcategorybyid?categoryid="+categoryId,
+            url:"https://mmb.ittun.com/api/getcategorybyid?categoryid="+categoryId,
             success:function(data) {
                 console.log(data);
                 //设置类名
@@ -25,7 +25,7 @@ $(function(){
     function setproductlist(categoryId,pageId) {
         //找商品列表
         $.ajax({
-            url:"http://mmb.ittun.com/api/getproductlist",
+            url:"https://mmb.ittun.com/api/getproductlist",
             data:{
                 categoryid:categoryId,
                 pageid:pageId

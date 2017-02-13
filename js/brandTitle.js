@@ -5,7 +5,7 @@ $(function(){
     getdata();
     function getdata() {
         $.ajax({
-            url:"http://mmb.ittun.com/api/getbrandtitle",
+            url:"https://mmb.ittun.com/api/getbrandtitle",
             success:function(data) {
                 //生成标签
                 var html = template("listTmp",data);

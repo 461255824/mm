@@ -7,7 +7,7 @@ $(function () {
     getproduct(pageId);
     function getproduct(pageId) {
         $.ajax({
-            url:"http://mmb.ittun.com/api/getmoneyctrl",
+            url:"https://mmb.ittun.com/api/getmoneyctrl",
             data:{pageid:pageId},
             success:function(data) {
                 console.log(data);

@@ -7,7 +7,7 @@ $(function () {
     //生成标题再说
     function gettitle() {
         $.ajax({
-            url: "http://mmb.ittun.com/api/getbaicaijiatitle",
+            url: "https://mmb.ittun.com/api/getbaicaijiatitle",
             success: function (data) {
                 //拿到标题列表
                 var html = template("titleTmp", data);
@@ -31,7 +31,7 @@ $(function () {
     //获取商品数据
     function getproduct(titleId) {
         $.ajax({
-            url: "http://mmb.ittun.com/api/getbaicaijiaproduct",
+            url: "https://mmb.ittun.com/api/getbaicaijiaproduct",
             data: {titleid: titleId},
             success: function (data) {
                 var html = template("productTmp", data);

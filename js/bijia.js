@@ -10,7 +10,7 @@ $(function () {
     function getproduct(productid) {
         //根据传进来的id来获取相应的产品
         $.ajax({
-            url:"http://mmb.ittun.com/api/getproduct",
+            url:"https://mmb.ittun.com/api/getproduct",
             data:{productid:productid},
             success:function(data) {
                 console.log(data);
@@ -27,7 +27,7 @@ $(function () {
     //获取对应商品的评论
     function getproductmessage(productid) {
         $.ajax({
-            url:"http://mmb.ittun.com/api/getproductcom",
+            url:"https://mmb.ittun.com/api/getproductcom",
             data:{productid:productid},
             success:function(data) {
                 console.log(data);

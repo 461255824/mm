@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.panel-group a {
+    display: inline-block;
+    width:100%;
+    height:100%;
+}
+.panel-group h4 {
+    height: 100%;
+}
+.inset {
+    border-right:1px solid #666;
+    border-bottom: 1px solid #666;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+
+}
+.inset a {
+    width:100%;
+    height: 100%;
+}

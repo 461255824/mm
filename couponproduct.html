@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>首页</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <!--<link rel="stylesheet" href="css/index.css"/>-->
+    <!--<link rel="stylesheet" href="css/moneyctrl.css"/>-->
+    <link rel="stylesheet" href="css/couponproduct.css"/>
+</head>
+<body>
+<!--头部区域-->
+<header>
+    <a href="index.html" class="back"> &lt;</a>
+
+    <h1>优惠券</h1>
+    <a href="#" class="downapp fr"><img src="./images/header_app.png" alt=""/></a>
+</header>
+<!--头部导航区域-->
+
+<!--商品区-->
+<section class="product">
+    <div class="title">
+        --点餐前出示手机中的优惠券，即可享受优惠--
+    </div>
+    <div class="procuctlist">
+        <ul>
+            <li class="clearfix">
+                <div class="img fl"><img src="#" alt=""/></div>
+                <div class="info fl">
+                    <h3>必胜客以单品价点购任意饮料免费续杯一次</h3>
+                    <div class="price"></div>
+                    <div class="time">有效期至2017年01月06日</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--底部标签-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登陆</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">
+                注册
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">
+                返回顶部
+            </a>
+        </div>
+    </div>
+    <p>
+        <a href="#" class="app">手机APP下载</a>
+        <a href="#">慢慢卖手机版——</a>
+        掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+</body>
+<!--生成导航标签的点击模板引擎-->
+<!-- 主页导航菜单的模板 -->
+<!--生成模板-->
+<script type="text/html" id="productTmp">
+    {{each result as value i}}
+    <li class="clearfix">
+        <div class="img fl">
+            {{#value.couponProductImg}}
+        </div>
+        <div class="info fl">
+            <h3>{{value.couponProductName}}</h3>
+            <div class="price">{{value.couponProductPrice}}</div>
+            <div class="time">{{value.couponProductTime}}</div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+
+<!--先引入jquery文件-->
+<script src="lib/jquery/jquery.js"></script>
+<!--再引入bootstrap-->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<!--引入模板引擎-->
+<script src="lib/template.js"></script>
+<!--最后引入主文件-->
+<script src="js/couponproduct.js"></script>
+</html>

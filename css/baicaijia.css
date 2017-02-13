@@ -1,0 +1,114 @@
+@charset "UTF-8";
+header {
+    background: red;
+}
+.title li {
+    float: left;
+}
+.title li span {
+    display: inline-block;
+    padding: 10px;
+}
+.title li.active {
+    border-bottom: 2px solid red;
+
+}
+.title li.active span{
+
+    color:red;
+}
+nav {
+    overflow: hidden;
+}
+.productlist {
+    background: #e6e6e6;
+    padding-top:5px;
+}
+.productlist li {
+    padding:10px;
+    margin: 10px 0px;
+    background: white;
+}
+.productli img {
+    width:100%;
+    max-width: 135px;
+}
+.productli .img {
+    width:30%;
+    height: 100%;
+}
+.info {
+    margin-left: 10px;
+    width:65%;
+    height: 100%;
+}
+.productname {
+    font-weight: 600;
+    color:black;
+}
+.productprice{
+    color:red;
+    font-size: 18px;
+    margin: 5px 0px;
+}
+.productprice del {
+    margin-left: 30px;
+    font-size: 14px;
+    color:#666;
+}
+.tiao {
+    margin: 5px 0px;
+}
+.tiao b {
+    margin-left: 10px;
+    color:red;
+}
+.juan {
+    margin-top:10px;
+    vertical-align: middle;
+}
+
+.juan a:nth-child(1) {
+    border:1px dashed red;
+    color:red;
+    padding:5px 10px;
+    float: left;
+}
+.juan a:nth-child(2) {
+    float: right;
+    background: red;
+    color:white;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.bar i {
+    position: relative;
+    width:100px;
+    display: inline-block;
+    background: pink;
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+    font-weight: 600;
+    border:1px solid red;
+    height: 15px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.bar i em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: red;
+    border-radius: 10px;
+}
+.bar i span {
+    position: absolute;
+    line-height: 15px;
+    z-index: 10;
+}
+.title {
+    transition: all 1s;
+}

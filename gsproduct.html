@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>首页</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <!--<link rel="stylesheet" href="css/index.css"/>-->
+    <!--<link rel="stylesheet" href="css/moneyctrl.css"/>-->
+    <link rel="stylesheet" href="css/gsproduct.css"/>
+</head>
+<body>
+<!--头部区域-->
+<header>
+    <a href="index.html" class="back"> &lt;</a>
+
+    <h1>凑单品</h1>
+    <a href="#" class="downapp fr"><img src="./images/header_app.png" alt=""/></a>
+</header>
+<div class="container box">
+    <!--头部导航区域-->
+    <section class="title">
+        <div class="row">
+            <div class="shopheader col-xs-4" data-link = "http://mmb.ittun.com/api/getgsshop">
+                京东
+                <span class="caret"></span>
+            </div>
+            <div class="areaheader col-xs-4" data-link="http://mmb.ittun.com/api/getgsshoparea">
+                华北
+                <span class="caret"></span>
+            </div>
+            <div class="price col-xs-4">
+                价格
+                <span class="caret"></span>
+            </div>
+        </div>
+        <div class="shop row">
+            <ul class="shoplist">
+                <a href="#" data-shopid="0">
+                    <li >1元</li>
+                    <li >2元</li>
+                    <li >3元</li>
+                </a>
+            </ul>
+        </div>
+        <div class="area row">
+            <ul class="arealist">
+                <a href="#" data-areaid="0">
+                    <li >1元</li>
+                    <li >2元</li>
+                    <li >3元</li>
+                </a>
+            </ul>
+        </div>
+    </section>
+    <!--商品区-->
+    <section class="product">
+        <ul class="productlist">
+            <li>
+                <a href="#">
+                    <div class="img">
+                        <img src="" alt=""/>
+                    </div>
+                    <div class="info">
+                        <h4>【京东超市】喜之郎 优乐美 u.loveit 草莓味奶茶 22g/包</h4>
+                        <div class="pribtn">
+                            <div class="price"></div>
+                            <div class="btn btn-warning">去凑单</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
+
+
+<!--底部标签-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登陆</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">
+                注册
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">
+                返回顶部
+            </a>
+        </div>
+    </div>
+    <p>
+        <a href="#" class="app">手机APP下载</a>
+        <a href="#">慢慢卖手机版——</a>
+        掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+</body>
+<!--生成导航标签的点击模板引擎-->
+<!-- 主页导航菜单的模板 -->
+<!--生成模板-->
+<script type="text/html" id="shoplistTmp">
+    {{each result as value i}}
+    <li ><a href="#" data-shopid={{value.shopId}}>{{value.shopName}}</a></li>
+    {{/each}}
+</script>
+<script type="text/html" id="arealistTmp">
+    {{each result as value i}}
+    <li ><a href="#" data-areaid={{value.areaId}}>{{value.areaName}}</a></li>
+    {{/each}}
+</script>
+<script type="text/html" id="productTmp">
+    {{each result as value i}}
+    <li>
+        <a href="http://item.m.jd.com/ware/view.action?wareId=1274360">
+            <div class="img">
+                <img src="{{value.productImg}}" alt=""/>
+            </div>
+            <div class="info">
+                <h4>{{value.productName}}</h4>
+                <div class="pribtn clearfix">
+                    <div class="price fl">{{value.productPrice}}</div>
+                    <div class="btn btn-sm btn-warning fr">去凑单</div>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<!--先引入jquery文件-->
+<script src="lib/jquery/jquery.js"></script>
+<!--再引入bootstrap-->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<!--引入模板引擎-->
+<script src="lib/template.js"></script>
+<!--最后引入主文件-->
+<script src="js/gsproduct.js"></script>
+</html>

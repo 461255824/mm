@@ -1,0 +1,69 @@
+@charset "UTF-8";
+.product {
+    text-align: center;
+}
+.productname h4 {
+    margin:20px;
+    font-weight: 900;
+    color:black;
+}
+.productinfo,.productinfo .plist {
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.productinfo .price {
+    padding: 0px 10px;
+
+}
+.productinfo .price .money {
+    margin-right:20px;
+    color:red;
+}
+
+.productinfo .plist div {
+    border:1px solid #e6e6e6;
+    height:30px;
+    line-height: 30px;
+    background: orange;
+    color: white;
+    font-weight: 400;
+}
+.price .from {
+    line-height: 30px;
+}
+/*网友评价中间的过度*/
+.duration {
+    background: #e6e6e6;
+    height:30px;
+    line-height: 30px;
+}
+.duration h5 {
+    line-height: 30px;
+    text-align: center;
+}
+.productinfo .plist div.active {
+    background: orangered;
+}
+.messagelist {
+    padding:10px 10px;
+    border-bottom:2px solid #e6e6e6;
+}
+.messageinfo{
+    margin:10px 0px;
+}
+.messagebox {
+}
+/*更多评价*/
+.moremessage {
+    text-align: center;
+    height: 40px;
+
+    vertical-align:middle;
+    padding: 10px 20px;
+}
+.moremessage a {
+    display: block;
+    border:1px solid #666;
+    border-radius:5px;
+    padding:3px 0px;
+}

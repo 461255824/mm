@@ -1,0 +1,191 @@
+@charset "UTF-8";
+.proname h3 {
+    margin-top:20px;
+    font-size: 20px;
+    font-weight:600;
+}
+.proname h4 {
+    margin-bottom:10px;
+    font-size: 16px;
+    font-weight:400;
+    color:orange;
+}
+.ad {
+    padding:10px;
+}
+.ad img{
+    width: 100%;
+}
+.infomesssion {
+    margin-top:20px;
+}
+.infomesssion .imgsm  img{
+    width:120px;
+    height: 120px;
+    border:1px solid red;
+}
+.imgbg {
+    text-align: center;
+    margin: 30px 0px;
+
+}
+.imgbg img {
+    width: 100%;
+}
+.buy  {
+    text-align: center;
+    margin: 20px;
+}
+.buy a {
+    background: orange;
+    width:100%;
+}
+/*评论区域*/
+.message {
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+}
+.message h3 {
+    padding:10px 10px;
+
+}
+.replay {
+
+    border:2px solid #e0e0e0;
+    position: relative;
+}
+.textbox {
+    padding: 10px;
+}
+#text {
+    width: 100%;
+    border: none;
+    height: 68px;
+    outline: none;
+}
+.say {
+    width: 100%;
+    height: 30px;
+    background: #e0e0e0;
+
+    bottom: 0;
+    right: 0;
+}
+.say input {
+    float: right;
+    background: orange;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    padding: 3px 10px;
+}
+.title {
+    padding-left: 10px;
+    margin: 10px 0px;
+}
+.list li {
+    padding: 0px 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin:10px 0px;
+
+}
+.head {
+    width: 50px;
+    height: 50px;
+
+}
+.content{
+    width:80%;
+    margin-bottom: 10px;
+}
+
+/*路径*/
+.way {
+    height:40px;
+    background: #e6e6e6;
+    line-height:40px;
+    padding-left: 10px;
+}
+/*利用服务器传输的标签来进行组合*/
+.reply {
+    padding: 10px;
+}
+.form {
+    border: 1px solid #e6e6e6;
+}
+.form textarea {
+    outline: none;
+    width:100%;
+    border:none;
+}
+.ctrl {
+    background: #e0e0e0;
+    height: 30px;
+}
+.ctrl:befor,.ctrl:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: none;
+}
+.ctrl input {
+    float: right;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 10px;
+    background: orange;
+    color:white;
+}
+.userimg {
+    float: left;
+}
+
+.userimg img{
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+}
+.con {
+    float:left;
+    width: 80%;
+    margin-left: 10px;
+}
+.ui-border-b:before,.ui-border-b:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.tit {
+    margin-left: 10px;
+}
+.username {
+    float:left;
+}
+.time {
+    float:right;
+}
+.content {
+    margin-top: 10px;
+}
+.center {
+    text-align: center;
+}
+.center li {
+    text-align: center;
+}
+.center li a{
+    width: 100px;
+    border:1px solid #e0e0e0;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+.center li a strong {
+    margin-left: 20px;
+    color:orange;
+}

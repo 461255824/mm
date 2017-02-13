@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/*头部区域start*/
+/*最大和最小宽度*/
+body {
+    /*max-width: 750px;*/
+    min-width:300px;
+}
+header {
+    width: 100%;
+    height: 50px;
+    background:#ff841d;
+
+}
+.logo{
+    margin-left:20px;
+    margin-top: 10px;
+}
+.downapp {
+    margin-top: 10px;
+    margin-right:20px;
+}
+.logo img{
+    width:185px;
+    height:25px;
+}
+.downapp img {
+    width:34px;
+    height:34px;
+}
+/*头部区域end*/
+
+/*搜索区域start*/
+.searchare {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-right: 100px;
+}
+.searchare input{
+    border-radius: 10px;
+    height: 25px;
+}
+.searchare .goods {
+    width: 100%;
+    margin-left: 10px;
+    background: #e6e6e6;
+    padding-left: 20px;
+}
+.searchare .button {
+    background:#ff841d;
+    color:white;
+    width:50px;
+    line-height: 25px;
+    font-weight: 600;
+    margin-right: 20px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+/*搜索区域end*/
+
+/*菜单区域start*/
+#menu {
+    border-top: 5px solid #e6e6e6;
+    border-bottom: 5px solid #e6e6e6;
+    padding:10px;
+    text-align: center;
+}
+#menu img {
+    width:50%;
+    height: 50%;
+}
+
+#menu p {
+    margin:10px 0px;
+}
+#menu a {
+    width: 100%;
+    height: 100%;
+    display:inline-block;
+}
+#menu >.row>div:nth-last-child(-n+4) {
+    display: none;
+}
+/*菜单区域end*/
+
+/*折扣商品区域start*/
+.recommen {
+    font-size: 12px;
+}
+.recommen-title {
+    background:#ff841d;
+    height:30px;
+    padding:0px 10px;
+}
+.recommen-title h5 {
+    color:white;
+    line-height: 30px;
+}
+.recommen-title img {
+    width:25px;
+    height:25px;
+    margin-top: 5px;
+}
+
+.media {
+    padding:20px 10px 10px 10px;
+    border-bottom:2px solid #e6e6e6;
+}
+.media-left {
+    width: 30%;
+}
+.media-left img {
+
+    width: 100%;
+}
+.media-right h5 {
+    font-size: 14px;
+    color:black;
+}
+.media-right p {
+    color:red;
+    margin: 10px 0px;
+}
+.media-right {
+    width:65%;
+    height:100%;
+}
+.media-right .icon-comment {
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17'><path fill='#a1a1a1' d='M924.504962 664.898711 97.819886 664.898711c-17.557888 0-31.795147-14.241352-31.795147-31.795147l0-508.732583c0-17.557888 14.238282-31.792077 31.795147-31.792077l241.198387 0 149.664671-149.661601c6.209422-6.212492 14.34266-9.31618 22.478967-9.31618s16.269545 3.102664 22.479991 9.31618L683.306574 92.57788l241.198387 0c17.557888 0 31.795147 14.235213 31.795147 31.792077L956.300109 633.10254C956.300109 650.657358 942.061826 664.898711 924.504962 664.898711zM892.708791 156.169197l-222.569098 0c-8.428973 0-16.518209-3.354398-22.478967-9.31618l-136.498814-136.494721-136.498814 136.494721c-5.961782 5.961782-14.051017 9.31618-22.479991 9.31618l-222.569098 0L129.61401 601.304324l763.093758 0L892.707768 156.169197zM288.592814 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0ZM511.161912 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0ZM733.73101 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+/*更多商品请求*/
+.recommen-more {
+    padding: 10px;
+    text-align: center;
+}
+.recommen-more a {
+    width: 96%;
+    display: inline-block;
+    background:white;
+    border:1px solid #666;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+/*折扣商品区域end*/
+
+/*底部start*/
+footer .row div {
+    text-align:center;
+    border:1px solid #e6e6e6;
+    margin: 10px 0px;
+    height:30px;
+    line-height: 30px;
+    color:black;
+}
+footer p {
+    text-align: center;
+}
+footer p .app {
+    color:red;
+}
+footer {
+    overflow:hidden;
+}
+/*底部end*/
+.message {
+    margin-right: 10px;
+}
+.productlink {
+display: block;
+}

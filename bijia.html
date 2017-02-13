@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>首页</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/bijia.css"/>
+</head>
+<body>
+<!--头部区域-->
+<header>
+    <a href="#" class="logo fl"><img src="./images/header_logo.png" alt=""/></a>
+    <a href="#" class="downapp fr"><img src="./images/header_app.png" alt=""/></a>
+</header>
+<!--搜索区域-->
+<section class="searchare">
+    <input type="search" placeholder="请输入需要搜素的商品" class="goods"/>
+    <input type="button" value="搜索" class="button fr"/>
+</section>
+<!--商品区域-->
+<section>
+    <div class="categorytitle clearfix">
+        <ol>
+            <li><a href="#">首页 &gt;</a></li>
+            <li><a href="#">全部分类 &gt;</a></li>
+            <li>空调</li>
+        </ol>
+        <a href="#" class="btn btn-default">筛选</a>
+    </div>
+    <!-- 商品区域-->
+    <div class="product">
+        <div class="productname">
+            <h4>这是一台创维彩电，你买不了吃亏 买不到上当</h4>
+        </div>
+        <div class="productimg">
+            <img src="#" alt=""/>
+        </div>
+        <div class="productinfo">
+            <div class="row plist">
+                <div class="col-xs-4">比价购买</div>
+                <div class="col-xs-4">参数配置</div>
+                <div class="col-xs-4 active">评价信息</div>
+            </div>
+            <div class="clearfix price">
+                <div class="fl from">来自京东商城</div>
+                <div class="fr">
+                    <span class="money">价格：10000$</span>
+                    <input type="button" class="btn btn-sm" value="去购买"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 评论区域-->
+    <!-- 过渡区域-->
+    <div class="duration">
+        <h5>网友评价</h5>
+    </div>
+    <div class="messagebox">
+        <div class="messagelist">
+            <div class="messageinfo">
+                <div class="messagetop clearfix">
+                    <div class="messname fl">我是一个买家</div>
+                    <div class="messname fr">2017/02/05</div>
+                </div>
+                <div class="messagebottom clearfix">
+                    <div class="fr">
+                        购买项目：来自京东
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                使用了一周整体不错，主要是为了看纪录片和足球。装在窗户上有种大鱼缸的感觉哈！清晰度不错色彩也可以，应该说对得起2200的价格！还送了五年乐视会员，看英超所有比赛都free，但乐观乐视内容这块还不太丰富，应为家里也有百事通bestv和小米盒子，比较了下，电影百事通最好，纪录片小米最好，只有体育这块乐视比那两家好，还要多努力啊！电视本身有个不足，音响太差，太山寨了！而且不支持3.5mm接口或红白莲音频输出，害得我折腾半天，必须买光纤音频线
+            </div>
+
+        </div>
+        <div class="messagelist">
+            <div class="messageinfo">
+                <div class="messagetop clearfix">
+                    <div class="messname fl">我是一个买家</div>
+                    <div class="messname fr">2017/02/05</div>
+                </div>
+                <div class="messagebottom clearfix">
+                    <div class="fr">
+                        购买项目：来自京东
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                使用了一周整体不错，主要是为了看纪录片和足球。装在窗户上有种大鱼缸的感觉哈！清晰度不错色彩也可以，应该说对得起2200的价格！还送了五年乐视会员，看英超所有比赛都free，但乐观乐视内容这块还不太丰富，应为家里也有百事通bestv和小米盒子，比较了下，电影百事通最好，纪录片小米最好，只有体育这块乐视比那两家好，还要多努力啊！电视本身有个不足，音响太差，太山寨了！而且不支持3.5mm接口或红白莲音频输出，害得我折腾半天，必须买光纤音频线
+            </div>
+
+        </div>
+    </div>
+    <!-- 更多评价-->
+    <div class="moremessage">
+        <a href="#">查看更多评价</a>
+    </div>
+</section>
+<!--底部标签-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登陆</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">
+                注册
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">
+                返回顶部
+            </a>
+        </div>
+    </div>
+    <p>
+        <a href="#" class="app">手机APP下载</a>
+        <a href="#">慢慢卖手机版——</a>
+        掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+</body>
+<!--生成导航标签的点击模板引擎-->
+<!-- 主页导航菜单的模板 -->
+<script type="text/html" id="productTmp">
+    {{each result as value i}}
+    <div class="productname">
+        <h4>{{value.productName}}</h4>
+    </div>
+    <div class="productimg">
+        {{#value.productImg}}
+    </div>
+    <div class="productinfo">
+        <div class="row plist">
+            <div class="col-xs-4">比价购买</div>
+            <div class="col-xs-4">参数配置</div>
+            <div class="col-xs-4 active">评价信息</div>
+        </div>
+        <div class="clearfix price">
+            {{#value.bjShop}}
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="messageTmp">
+    {{each result as value i}}
+    <div class="messagelist">
+        <div class="messageinfo">
+            <div class="messagetop clearfix">
+                <div class="messname fl">{{value.comName}}</div>
+                <div class="messname fr">{{value.comTime}}</div>
+            </div>
+            <div class="messagebottom clearfix">
+                <div class="fr">
+                    {{value.comFrom}}
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            {{value.comContent}}
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+
+<!--先引入jquery文件-->
+<script src="lib/jquery/jquery.js"></script>
+<!--再引入bootstrap-->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<!--引入模板引擎-->
+<script src="lib/template.js"></script>
+<!--最后引入主文件-->
+<script src="js/bijia.js"></script>
+</html>

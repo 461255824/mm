@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>商品价格</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+
+    <link rel="stylesheet" href="css/brandTitle.css"/>
+</head>
+<body>
+<!--头部区域-->
+<header>
+    <a href="#" class="logo fl"><img src="./images/header_logo.png" alt=""/></a>
+    <a href="#" class="downapp fr"><img src="./images/header_app.png" alt=""/></a>
+</header>
+<!--搜索区域-->
+<section class="searchare">
+    <input type="search" placeholder="请输入需要搜素的商品" class="goods"/>
+    <input type="button" value="搜索" class="button fr"/>
+</section>
+<section>
+    <div class="categorytitle clearfix">
+        <ol>
+            <li><a href="#">首页 &gt;</a></li>
+            <li><a href="#">全部分类 &gt;</a></li>
+            <li>空调</li>
+        </ol>
+        <a href="#" class="btn btn-default">筛选</a>
+    </div>
+</section>
+
+<!--热门产品-->
+<div class="title">
+    <h1>热门产品排行</h1>
+</div>
+<!--生成列表-->
+<div class="list">
+    <ul>
+        <li>
+            <a href="#">平板电视十大品牌 </a>
+
+        </li>
+        <li>
+            <a href="#">平板电视十大品牌 </a>
+
+        </li>
+    </ul>
+</div>
+<!--生成查询条件-->
+<section>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    </div>
+</section>
+
+
+
+
+
+<!--底部标签-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登陆</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">
+                注册
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">
+                返回顶部
+            </a>
+        </div>
+    </div>
+    <p>
+        <a href="#" class="app">手机APP下载</a>
+        <a href="#">慢慢卖手机版——</a>
+        掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+</body>
+<!--生成导航标签的点击模板引擎-->
+<!-- 主页导航菜单的模板 -->
+<script type="text/html" id="listTmp">
+    <ul>
+        {{each result as value i}}
+        <li>
+            <a href="brand.html?brandTitleId={{value.brandTitleId}}&categoryId={{categoryId}}">{{value.brandTitle}}</a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<!--生成内部结构-->
+
+<!--先引入jquery文件-->
+<script src="lib/jquery/jquery.js"></script>
+<!--再引入bootstrap-->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<!--引入模板引擎-->
+<script src="lib/template.js"></script>
+<script src="lib/less/less.js"></script>
+<!--最后引入主文件-->
+<script src="js/brandTitle.js"></script>
+</html>

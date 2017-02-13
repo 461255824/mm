@@ -1,0 +1,43 @@
+@charset "UTF-8";
+header {
+    background: red;
+}
+.title {
+    text-align: center;
+    background: yellow;
+}
+.procuctlist .img {
+    width: 30%;
+}
+.procuctlist .img img{
+    width: 100%;
+    max-width: 135px;
+}
+.procuctlist .info {
+    width: 65%;
+    margin-left: 10px;
+}
+.procuctlist h3 {
+    font-size: 16px;
+    color:black;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+}
+.procuctlist .time {
+    font-size: 14px;
+    color:orange;
+}
+.procuctlist {
+    padding:10px;
+}
+.procuctlist ul li {
+    margin:10px 0px;
+}
+.procuctlist .price {
+    font-size:16px;
+    color:red;
+    font-weight:600;
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.searchare {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-right: 100px;
+}
+.searchare input{
+    border-radius: 10px;
+    height: 25px;
+}
+.searchare .goods {
+    width: 100%;
+    margin-left: 10px;
+    background: #e6e6e6;
+    padding-left: 20px;
+}
+.searchare .button {
+    background:#ff841d;
+    color:white;
+    width:50px;
+    line-height: 25px;
+    font-weight: 600;
+    margin-right: 20px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+/*标题*/
+.title {
+    background: #e6e6e6;
+    padding: 20px;
+    margin: 10px 5px;
+    color:orange;
+
+}
+.title h1 {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.list a {
+    display: inline-block;
+    padding:10px;
+    width:100%;
+    background: #e6e6e6;
+
+}
+.list li {
+    margin:5px 0px;
+}
+

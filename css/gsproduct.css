@@ -1,0 +1,72 @@
+@charset "UTF-8";
+.title>.row>div {
+    text-align: center;
+    padding: 10px;
+    background: white;
+    font-size: 16px;
+}
+.title {
+    margin-bottom: 10px;
+    position: relative;
+}
+.box {
+    background:#e6e6e6;
+}
+
+/*设置下拉菜单的格式*/
+.shop,.area {
+    background: white;
+    position: relative;
+}
+.shop ul,.area ul {
+    position: absolute;
+    width: 100%;
+    background: white;
+    z-index: 100;
+    display: none;
+}
+.shop  li,.area li {
+     border:1px solid #e6e6e6;
+     padding: 10px 20px;
+ }
+.shop  li a,.area li  a{
+    width: 100%;
+    display: inline-block;
+}
+
+
+/*商品区域*/
+.product {
+    margin:5px -10px;
+}
+.productlist li {
+    float:left;
+    width:50%;
+    padding: 5px;
+
+}
+.productlist li a {
+    display: inline-block;
+    background: white;
+}
+.productlist h4 {
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    height: 25px;
+    margin: 5px;
+}
+.productlist img {
+    width: 100%;
+    max-width: 174px;
+    max-height: 174px;
+}
+.pribtn {
+    padding: 5px 10px;
+}
+.price {
+    font-size: 24px;
+    color:red;
+    vertical-align: middle;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>商品价格</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+
+    <link rel="stylesheet" href="css/brand.css"/>
+</head>
+<body>
+<!--头部区域-->
+<header>
+    <a href="#" class="logo fl"><img src="./images/header_logo.png" alt=""/></a>
+    <a href="#" class="downapp fr"><img src="./images/header_app.png" alt=""/></a>
+</header>
+<!--搜索区域-->
+<section class="searchare">
+    <input type="search" placeholder="请输入需要搜素的商品" class="goods"/>
+    <input type="button" value="搜索" class="button fr"/>
+</section>
+<section>
+    <div class="categorytitle clearfix">
+        <ol>
+            <li><a href="#">首页 &gt;</a></li>
+            <li><a href="#">全部分类 &gt;</a></li>
+            <li>空调</li>
+        </ol>
+        <a href="#" class="btn btn-default">筛选</a>
+    </div>
+</section>
+
+<!--热门产品-->
+<div class="product">
+    <h3 class="head">平板电视哪个牌子好</h3>
+
+    <div class="productlist">
+        <ul>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="count">
+    <h3 class="head">平板电视产品销量排行</h3>
+
+    <div class="countlist"></div>
+</div>
+<div class="message">
+    <h3 class="head">平板电视最新评论</h3>
+
+    <div class="messagelist">
+        <ul>
+            <!--<li>-->
+                <!--<a href="#">-->
+                    <!--<div class="up clearfix">-->
+                        <!--<div class="img fl">-->
+                            <!--<img src="#" alt=""/>-->
+                        <!--</div>-->
+                        <!--<div class="title fl">-->
+                            <!--创维彩电大电视-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="down">-->
+                        <!--<div class="info clearfix">-->
+                            <!--<span class="username fl">我是张强</span>-->
+                            <!--<span class="star fl">★★★★★</span>-->
+                            <!--<span class="time fr">2012/3/4</span>-->
+                        <!--</div>-->
+                        <!--<div class="usermessage">-->
+                            <!--电视历经千辛万苦 终于加入了我们的大家庭 刚开始因为外箱没有封口贴 不放心 后来打开才发现是2层包装 里面那层有封口贴 终于一颗心落地 接着说说电视 第一次买乐视电视 还送了28月的会员 一共3599的价格 真是已经很划算了 性价比超高 操作起来对于我们年轻人来说 再简单不过了 页面简单清爽 画质和音质对于一般家庭可以满足 但对于发烧友来讲 略逊一筹 收到的是超级遥控器 用起来很方便 有空鼠和语音 相比传统的遥控要好一些-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</div>
+<!--生成列表-->
+
+
+<!--底部标签-->
+<footer>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登陆</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">
+                注册
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">
+                返回顶部
+            </a>
+        </div>
+    </div>
+    <p>
+        <a href="#" class="app">手机APP下载</a>
+        <a href="#">慢慢卖手机版——</a>
+        掌上比价平台
+    </p>
+
+    <p>m.manmanbuy.com</p>
+</footer>
+</body>
+<!--生成导航标签的点击模板引擎-->
+<!-- 主页导航菜单的模板 -->
+<script type="text/html" id="productlistTmp">
+    <ul>
+        {{each result as value i}}
+        <li>
+            <a href="productlist.html?categoryid={{value.categoryId}}&pageid=1">
+                <div class="box clearfix">
+                    <div class="num fl">{{i+1}}</div>
+                    <div class="info fl">
+                        <div class="title">{{value.brandName}}</div>
+                        <p>{{value.brandInfo}}</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/html" id="countlistTmp">
+    <ul>
+        {{each result as value i}}
+        <li>
+            <a href="bijia.html?productid={{value.productId}}">
+                <div class="box clearfix">
+                    <div class="img fl">
+                        {{#value.productImg}}
+                    </div>
+                    <div class="info fl">
+                        <div class="title">{{value.productName}}</div>
+                        <div class="price">
+                            {{value.productPrice}}
+                        </div>
+                        <p>
+                            <span>{{value.productCom}}</span>
+                            <span>{{value.productQuote}}</span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/html" id="messagelistTmp">
+    <ul>
+        {{each result as value i}}
+        <li>
+            <a href="#">
+                <div class="up clearfix">
+                    <div class="img fl">
+                        <img src="#" alt=""/>
+                    </div>
+                    <div class="title fl">
+                        创维彩电大电视
+                    </div>
+                </div>
+                <div class="down">
+                    <div class="info clearfix">
+                        <span class="username fl">{{value.comName}}</span>
+                        <span class="star fl">★★★★★</span>
+                        <span class="time fr">{{value.comTime}}</span>
+                    </div>
+                    <div class="usermessage">
+                        {{value.comContent}}
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<!--生成内部结构-->
+
+<!--先引入jquery文件-->
+<script src="lib/jquery/jquery.js"></script>
+<!--再引入bootstrap-->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<!--引入模板引擎-->
+<script src="lib/template.js"></script>
+<script src="lib/less/less.js"></script>
+<!--最后引入主文件-->
+<script src="js/brand.js"></script>
+</html>
